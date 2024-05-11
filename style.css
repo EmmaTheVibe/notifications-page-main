@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(210, 60%, 98%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container {
+    width: 586px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 25px;
+    margin-bottom: 16px;
+    box-shadow: 5px 10px 15px hsl(211, 68%, 94%);
+}
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.notif-no {
+    margin-left: 6px;
+    height: 20px;
+    width: 22px;
+    border-radius: 4px;
+    background-color: hsl(219, 85%, 26%);
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digit {
+    transition: 5s ease-in;
+}
+.summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header {
+    font-size: 18px;
+    font-weight: 800;
+}
+.notif {
+    width: 100%;
+    /* border: 1px solid hsl(210, 60%, 98%); */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 76px;
+}
+.pfp {
+    margin-right: 12px;
+}
+.pfp img {
+    width: 42px;
+}
+.borders {
+    border: 1px solid hsla(205, 33%, 90%, 0);
+    border-radius: 8px;
+    /* padding: 2px;
+    padding-bottom: 0; */
+    transition: .25s ease-in;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.borders:hover {
+    border: 1px solid hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+.pic {
+    width: 42px;
+    /* border: 1px solid red; */
+    /* margin-bottom: 0px; */
+}
+.spotted {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.notif-comment {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.notif-comment .time {
+    margin-bottom: 10px;
+}
+.comment-box {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(205, 33%, 90%);
+    height: 80px;
+    padding: 12px;
+    transition: .25s ease-in;
+}
+.comment-box:hover {
+    background-color: hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+.comment {
+    /* width: 85%; */
+    margin: 0 auto;
+    font-weight: 500;
+}
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: 3px;
+    border-radius: 50%;
+    transition: .2s ease-in;
+}
+.info-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.active {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+    transition: .2s ease-in;
+}
+.name {
+    font-weight: 800;
+    transition: .25s ease-in;
+}
+.name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.note {
+    font-weight: 800;
+    color: hsl(219, 14%, 63%);
+    transition: .25s ease-in;
+}
+.note:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.txt, .time, .comment {
+    color: hsl(219, 14%, 63%);
+}
+.toggle {
+    color: hsl(219, 14%, 63%);
+    transition: .25s ease-in;
+}
+.toggle:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .container {
+        width: 320px;
+        font-size: 12px;
+    }
+    .header {
+        font-size: 16px;
+    }
+    .toggle {
+        font-size: 13px;
+    }
+    .info {
+        position: relative;
+    }
+    .dot {
+        position: absolute;
+    }
+    .dotA{
+        top: 20.5px;
+        left: 186px;
+    }
+    .dotB{
+        top: 5.5px;
+        left: 148px;
+    }
+    .dotC{
+        top: 20.5px;
+        left: 66px;
+    }
+    .comment-box {
+        height: 100px;
+    }
+    .pfp img {
+        width: 36px;
+    }
+    .pic {
+        width: 32px;
+        margin-bottom: 0;
+    }
+    .borders {
+        height: 38px;
+        padding-left: 1px;
+    }
+
+}
