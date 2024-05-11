@@ -211,6 +211,7 @@ body {
     }
     .comment-box {
         height: 100px;
+        padding-top: 10px;
     }
     .pfp img {
         width: 36px;
